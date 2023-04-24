@@ -1,0 +1,90 @@
+body{
+    background: url(images/background2.jpg) no-repeat center center fixed; 
+    background-size: 100%;
+}
+
+/* #name{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 144px;
+    color: rgb(228,226,215);
+    color: linear-gradient(85deg, rgba(228,226,215,1) 0%, rgba(208,207,198,1) 100%);
+    opacity: 80%;
+
+    margin-left: 10%;
+    margin-top: 10%;
+
+    text-shadow: 8px -8px 10px rgba(255, 255, 255, 0.07), -45px 45px 70px rgba(0, 0, 0, 0.2), -30px 30px 30px rgba(0, 0, 0, 0.2), -10px 10px 10px rgba(0, 0, 0, 0.35);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+} */
+
+/* #subheader{
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 250px;
+
+    font-family: 'Aclonica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+
+    color: #D5D3C9;
+} */
+
+a {
+    text-decoration: none;
+    font-family: 'Aclonica';
+    font-style: normal;
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #838176;
+    line-height: 2;
+}
+
+a:hover{
+    color: #B520C2;
+}
+
+ol,
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+main{
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    margin-top: 29%;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 80px;
+    margin-top: 0.5%;
+    margin-left: 12.5%;
+}
+
+#research{
+    margin-left: 8.5%;
+    margin-top: 1%;
+    text-align: right;
+}
+
+#development{
+    margin-left: 9%;
+    text-align: center;
+}
+
+#capstone{
+    margin-left: 8%;
+    margin-top: 1%;
+}
+
