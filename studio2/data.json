@@ -1,0 +1,42 @@
+{
+    "point1" : {
+        "time": "10:00",
+        "energy": 100, 
+        "inner monologue" : "feeling pumped!"
+    },
+    "point2" : {
+        "time" : "10:15",
+        "energy": 80, 
+        "inner monologue" : "you got this, so strong!"
+    },
+    "point3" : {
+        "time" : "10:30",
+        "energy": 50, 
+        "inner monologue" : "almost passed out there"
+    },
+    "point4" : {
+        "time" : "10:45",
+        "energy": 50, 
+        "inner monologue" : "how much longer?"
+    },
+    "point5" : {
+        "time" : "11:00",
+        "energy": 30, 
+        "inner monologue" : "ready to leave now"
+    },
+    "point6" : {
+        "time" : "11:15",
+        "energy": 20, 
+        "inner monologue" : "just 30 more minutes how long can that be?"
+    },
+    "point7" : {
+        "time" : "11:30",
+        "energy": 10, 
+        "inner monologue" : "can I just lay here?"
+    },
+    "point8" : {
+        "time" : "11:45",
+        "energy": 5, 
+        "inner monologue" : "I'm so glad it's over"
+    }
+}
