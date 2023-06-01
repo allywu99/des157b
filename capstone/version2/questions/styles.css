@@ -1,0 +1,120 @@
+.show {
+
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.hide {
+
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+
+@media all and (max-width: 500px) {
+
+    body {
+        overflow-x: hidden;
+        background-color: rgb(255, 255, 255);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    header {
+
+        background-color: #1D4776;
+        color: white;
+        padding: 50px;
+        height: 120px;
+
+    }
+
+    header h2 {
+
+        position: absolute;
+        width: 121px;
+        height: 30px;
+        left: 43px;
+        top: 15px;
+        
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+
+    ol li {
+
+        padding: 5px;
+
+    }
+
+    ol {
+
+        position: absolute;
+        width: 289px;
+        height: 121px;
+        left: 12px;
+        top: 57px;
+        
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        
+
+    }
+
+    p {
+        line-height: 24px;
+    }
+
+    label {
+
+        display: block;
+        font-size: 14px;
+
+    }
+
+    form {
+
+        text-align: left;
+        padding: 40px;
+    }
+
+    form p {
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+
+    }
+
+    input {
+        width: auto;
+        display: inline;
+    }
+
+
+    .submit {
+
+        font-size: 14px;
+        position: absolute;
+        width: 174px;
+        height: 37px;
+        left: 100px;
+        top: 560px;
+        border-radius: 40px;
+        border: none;
+        color: #CCCCCC;
+
+    }
+
+
+}
