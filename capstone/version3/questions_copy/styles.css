@@ -120,13 +120,27 @@
         align-items: center;
     }
 
-    #q1 .radio, h3{
+    #q1, #q1_ans{
+        position: absolute;
+    }
+
+    #q1, #q1_ans .radio, h3{
         margin-left: 7%;
         margin-right: 5%;
     }
 
-    #q1 h3{
+    #q1, #q1_ans h3{
         font-weight: 600;
+    }
+
+    .home{
+        margin-top: 3%;
+        text-align: center;
+        
+    }
+
+    .home a{
+        color:#CCCCCC;
     }
 
     .q_img{
@@ -135,6 +149,26 @@
         margin-right: auto;
         margin-top: 7%;
         width: 50%;
+    }
+
+    .twobuttons{
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    #learnmore, #nextButton{
+        width: 200px;
+        text-align: center;
+        margin-top: 4%;
+        font-size: 17px;
+        padding: 1em 2em;
+        border: transparent;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        background-color: #1D4776;
+        font-weight: 600;
+        color: white;
+        border-radius: 30px;
     }
 
     #quizProg {
@@ -149,8 +183,33 @@
     progress::-webkit-progress-bar {
         background-color: #D9D9D9;
      }
-     progress::-webkit-progress-value {
+    #quizProg::-webkit-progress-value {
         background-color: #1D4776;
      }
+     .q1_ans::-webkit-progress-value {
+        background-color: #FFBF00;
+     }
+
+     /* STYLING THE DATA BARS */
+     .q1_ans{
+        margin-left: 7%;
+        background-color: #D9D9D9;
+        width: 40%;
+        height: 20px;
+     }
+
+     .group {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+     }
+    
+     .group p{
+        text-align: left;
+     }
+
+    .results p{
+        font-size: 1.2em;
+    }
 
 }
