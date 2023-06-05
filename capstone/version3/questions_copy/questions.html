@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JS -->
+    <script src="questions.js" defer></script>
+    <!-- CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!--  Normalized CSS  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+        <!--  Google Fonts  -->
+        <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Oswald:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Seal Questionaire</title>
+</head>
+<body>
+
+  <header>
+
+<h2>Instructions</h2>
+<ol>
+  <li>Look at each symbol</li>
+  <li>Tell us about your experience in Davis</li>
+  <li>Compare experiences with other UC Davis students and view the artists' intention as well</li>
+</ol>
+
+  </header>
+
+    <form id="q1" class="show">
+      <img src="../images/question1.jpg" alt="Photo of the seal" class="q_img show">
+      <h3>I feel accepted and represented within the Davis community</h3>
+
+      <!-- Radio buttons -->
+      <div class="radio">
+        <input type="radio" name="options" value="option1">Strongly Disagree
+      </div>
+
+      <div class="radio">
+          <input type="radio" name="options" value="option2">Disagree
+      </div>
+
+      <div class="radio">
+          <input type="radio" name="options" value="option3">Neutral
+      </div>
+
+      <div class="radio">
+          <input type="radio" name="options" value="option4">Agree
+      </div>
+
+      <div class="radio">
+          <input type="radio" name="options" value="option5">Strongly Agree
+      </div>
+
+      <!-- Submit button -->
+      <div class="q_button">
+          <button type="submit" id="submitButton" disabled class="submitButton">Submit</button>
+      </div>    
+            
+    </form>
+
+    <progress id="quizProg" value="33.33" max="100"> 10% </progress>
+
+    <section id="susan1" class="hide">
+
+      <p>The artist of the Seal, Susan LastName, said ajfaFBJVK JFBJ akbja</p>
+
+    </section>
+</body>
+</html>

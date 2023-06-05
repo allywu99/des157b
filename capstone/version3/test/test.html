@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionnaire with Progress Bar</title>
+  <style>
+    #progressBarContainer {
+      width: 100%;
+      height: 30px;
+      background-color: #f3f3f3;
+      position: relative;
+    }
+
+    #progressBar {
+      width: 0%;
+      height: 30px;
+      background-color: #4caf50;
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <form id="questionnaire">
+    <!-- Question 1 -->
+    <div class="question">
+      <p>Question 1: What is your favorite color?</p>
+      <input type="text" name="color1" placeholder="Enter your favorite color">
+      <button type="button" class="submitButton">Submit</button>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+      <p>Question 2: What is your favorite animal?</p>
+      <input type="text" name="animal1" placeholder="Enter your favorite animal">
+      <button type="button" class="submitButton">Submit</button>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question">
+      <p>Question 3: What is your favorite food?</p>
+      <input type="text" name="food1" placeholder="Enter your favorite food">
+      <button type="button" class="submitButton">Submit</button>
+    </div>
+  </form>
+
+  <div id="progressBarContainer">
+    <div id="progressBar" style="width: 0%; height: 30px; background-color: #f3f3f3;"></div>
+  </div>
+
+  <script>
+    const progressBar = document.getElementById("progressBar");
+    const progressBarContainer = document.getElementById("progressBarContainer");
+    const submitButtons = document.querySelectorAll(".submitButton");
+    let answeredQuestions = 0;
+    let totalQuestions = submitButtons.length;
+
+    function updateProgressBar() {
+      progressBar.style.width = `${(answeredQuestions / totalQuestions) * 100}%`;
+    }
+
+    // Example: Increase the progress bar width when a question is answered
+    submitButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const questionDiv = button.closest(".question");
+        const input = questionDiv.querySelector("input[type='text']");
+        if (input.value.trim()) {
+          answeredQuestions++;
+          updateProgressBar();
+          input.disabled = true;
+          button.disabled = true;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

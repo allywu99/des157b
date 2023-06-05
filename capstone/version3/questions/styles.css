@@ -1,0 +1,191 @@
+.show {
+
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.hide {
+
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+
+}
+
+
+
+@media all and (max-width: 500px) {
+
+    body {
+        overflow-x: hidden;
+        background-color: rgb(255, 255, 255);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    header {
+
+        background-color: #1D4776;
+        color: white;
+        padding: 50px;
+        height: 120px;
+
+    }
+
+    header h2 {
+
+        position: absolute;
+        width: 121px;
+        height: 30px;
+        left: 43px;
+        top: 15px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+
+    ol li {
+
+        padding: 5px;
+
+    }
+
+    ol {
+
+        position: absolute;
+        width: 289px;
+        height: 121px;
+        left: 12px;
+        top: 57px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+
+
+    }
+
+    p {
+        line-height: 24px;
+    }
+
+    label {
+
+        display: block;
+        font-size: 14px;
+
+    }
+
+    form {
+
+        text-align: left;
+        padding: 40px;
+    }
+
+    form p {
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+
+    }
+
+    input {
+        width: auto;
+        display: inline;
+    }
+
+
+    .submit1 {
+
+        font-size: 14px;
+        position: absolute;
+        width: 174px;
+        height: 37px;
+        left: 100px;
+        top: 560px;
+        border-radius: 40px;
+        border: none;
+        color: #CCCCCC;
+
+    }
+
+    #quizProg {
+
+        position: absolute;
+        background-color: rgb(253, 253, 253);
+        color: rgb(0, 255, 0);
+        max-width: 500px;
+        min-width: none;
+        width: 414px;
+        height: 12px;
+        right:0px;
+        top: 220px;
+
+    }
+
+    progress::-webkit-progress-bar {
+        background-color: rgb(212, 212, 212);
+     }
+     progress::-webkit-progress-value {
+        background-color: rgb(70, 240, 255);
+     }
+
+     #susan1 {
+
+        position: fixed;
+        transform: translateY(196px);
+        width: 414px;
+        height: 476px;
+        max-width: 500px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20 20 0 0;
+        box-shadow: 0px -4px 20px -1px rgba(102, 102, 102, 0.2);
+
+
+     }
+
+     #susan1 p {
+
+        width: 200px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        font-size: 9px;
+
+     }
+
+     #susanpic {
+
+        position: relative;
+        float: right;
+
+     }
+
+     #susanContent1 {
+
+        display: flex;
+        flex-direction: row;
+
+     }
+
+     #susanContent1 img {
+
+margin-left: 30px;
+
+     }
+
+     #susan1 h2, h3 {
+
+        margin-left: 30px;
+
+     }
+
+
+}
