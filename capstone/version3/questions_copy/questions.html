@@ -30,9 +30,9 @@
 
   </header>
 
-    <form id="q1" class="hide">
+    <form id="q1" class="show">
       <img src="../images/question1.jpg" alt="Photo of the seal" class="q_img show">
-      <h3>I feel accepted and represented within the Davis community</h3>
+      <h3>Q1. I feel accepted and represented within the Davis community</h3>
 
       <!-- Radio buttons -->
       <div class="radio">
@@ -60,13 +60,14 @@
           <button type="submit" id="submitButton" disabled class="submitButton">Submit</button>
       </div>  
       
+      <!-- Home button -->
       <div class="home">
         <a href="../index.html">Back to Home</a> 
       </div>
            
     </form>
 
-    <form id="q1_ans" class="show">
+    <form id="q1_ans" class="hide">
       <img src="../images/question2.jpg" alt="Photo of the seal" class="q_img show">
       <h3>Q1. I feel accepted and represented within the Davis community</h3>
 
@@ -95,22 +96,64 @@
 
       <!-- Learn More and Next Button -->
       <div class="twobuttons">
-        <button type="submit" id="learnmore">Learn More</button>
+        <button id="toggleOverlay">Learn More</button>
         <button type="submit" id="nextButton">Next</button>
       </div>  
-      
+
+      <div class="overlay">
+        <div class="overlay-content">
+          <img src="../images/susanopen.png" alt = "Susan's testimonial">
+          <span class="closebtn" onclick="closeOverlay()">&times;</span>
+        </div>
+      </div>
+
+      <!-- <div id="overlay" class="overlay">
+        <img src="../images/susanopen.png" alt = "Susan's testimonial">
+      </div>
+       -->
       <div class="home">
         <a href="../index.html">Back to Home</a> 
       </div>
            
     </form>
-    
-    <progress id="quizProg" value="33.33" max="100">33.33</progress>
 
-    <section id="susan1" class="hide">
+    <!-- Question 2 -->
+    <form id="q2" class="hide">
+      <img src="../images/question2.jpg" alt="Photo of the seal Question 2" class="q_img show">
+      <h3>Q2. Among these plants and animals, choose which you think are native to Davis, CA.</h3>
+      <div class="checkbox">
+        <input type="checkbox" name="wildlife" value="ducks"> Ducks<br>
+      <input type="checkbox" name="wildlife" value="grass"> Grass<br>
+      <input type="checkbox" name="wildlife" value="chickens"> Chickens<br>
+      <input type="checkbox" name="wildlife" value="lilypads"> Lily pads<br>
+      <input type="checkbox" name="wildlife" value="reeds"> Reeds<br>
+      </div>
 
-      <p>The artist of the Seal, Susan LastName, said ajfaFBJVK JFBJ akbja</p>
+        <!-- Submit button -->
+      <div class="q_button">
+          <button type="submit" id="submitButton2" disabled class="submitButton2">Submit</button>
+      </div>  
+          
+    <!-- Home button -->
+      <div class="home">
+        <a href="../index.html">Back to Home</a> 
+      </div>
+           
+    </form>
 
-    </section>
+    <section id="q2_ans" class="hide">
+      <img src="images/q2image.png" width="160" height="183">
+      <img src="images/response2.png" width="375" height="320">
+      
+        <div class="twobuttons">
+          <button type="submit" id="learnmore">Learn More</button>
+          <button type="submit" id="nextButton">Next</button>
+        </div>  
+      
+      
+        </section>
+
+    <progress id="quizProg" value="33.33" max="100"> 10% </progress>
+
 </body>
 </html>

@@ -22,6 +22,15 @@
         font-family: 'Poppins', sans-serif;
     }
 
+    .img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      button:active {
+        transform: translate(0em, 0.2em);
+       }
+
     header {
 
         background-color: #1D4776;
@@ -124,7 +133,7 @@
         position: absolute;
     }
 
-    #q1, #q1_ans .radio, h3{
+    #q1, #q1_ans, .checkbox, .radio, h3{
         margin-left: 7%;
         margin-right: 5%;
     }
@@ -136,7 +145,7 @@
     .home{
         margin-top: 3%;
         text-align: center;
-        
+        margin-bottom: 10%;
     }
 
     .home a{
@@ -157,7 +166,7 @@
         gap: 5%;
     }
 
-    #learnmore, #nextButton{
+    #toggleOverlay, #nextButton{
         width: 200px;
         text-align: center;
         margin-top: 4%;
@@ -171,6 +180,9 @@
         border-radius: 30px;
     }
 
+    #toggleOverlay, #nextButton:hover{
+        cursor: pointer;
+    }
     #quizProg {
         position: fixed;
         bottom: 0;
@@ -211,5 +223,62 @@
     .results p{
         font-size: 1.2em;
     }
+
+    /* STYLE THE OVERLAY */
+    /* .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        bottom: -100%;
+        left: 0;
+        right: 0;
+        animation: slide-up 0.3s ease-in-out forwards;
+      } */
+      
+      .overlay {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        bottom: -100%;
+        left: 0;
+        right: 0;
+        animation: slide-up 0.3s ease-in-out forwards;
+      }
+      
+      
+      .overlay.open {
+        animation: none;
+      }
+      
+      
+
+      @keyframes slide-up {
+        0% {
+          bottom: -100%;
+        }
+        100% {
+          bottom: 0;
+        }
+      }      
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .closebtn {
+        position: absolute;
+        color: #1D4776;
+        top: 27px;
+        right: 75px;
+        font-size: 40px;
+        cursor: pointer;
+      }
 
 }

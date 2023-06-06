@@ -118,74 +118,233 @@
     }
 
     #quizProg {
-
-        position: absolute;
-        background-color: rgb(253, 253, 253);
-        color: rgb(0, 255, 0);
-        max-width: 500px;
-        min-width: none;
-        width: 414px;
-        height: 12px;
-        right:0px;
-        top: 220px;
-
+        position: fixed;
+        bottom: 0;
+        background-color: #D9D9D9;
+        color: #1D4776;
+        width: 100%;
+        height: 20px;
     }
 
     progress::-webkit-progress-bar {
-        background-color: rgb(212, 212, 212);
-     }
-     progress::-webkit-progress-value {
-        background-color: rgb(70, 240, 255);
-     }
+        background-color: #D9D9D9;
+    }
 
-     #susan1 {
+    progress::-webkit-progress-value {
+        background-color: #1D4776;
+    }
+
+    /* Susan's First Response */
+
+    #susan1 {
 
         position: fixed;
-        transform: translateY(196px);
+        margin: auto;
+        padding: auto;
         width: 414px;
-        height: 476px;
+        height: 450px;
+        bottom: 0;
         max-width: 500px;
+        padding-bottom: 20px;
         background-color: rgb(255, 255, 255);
         border-radius: 20 20 0 0;
         box-shadow: 0px -4px 20px -1px rgba(102, 102, 102, 0.2);
 
 
-     }
+    }
 
-     #susan1 p {
+    #susan1 p {
 
         width: 200px;
         margin-bottom: 30px;
         margin-left: 30px;
         font-size: 9px;
 
-     }
+    }
 
-     #susanpic {
+    #susanpic {
 
         position: relative;
         float: right;
 
-     }
+    }
 
-     #susanContent1 {
+    #susanContent1 {
 
         display: flex;
         flex-direction: row;
 
-     }
+    }
 
-     #susanContent1 img {
-
-margin-left: 30px;
-
-     }
-
-     #susan1 h2, h3 {
+    #susanContent1 img {
 
         margin-left: 30px;
 
-     }
+    }
+
+    #susan1 h2,
+    h3 {
+
+        margin-left: 30px;
+
+    }
+
+    #quoteBot {
+
+        transform: translateY(-15px);
+
+    }
+
+        /* Question 2 */
+
+    #q2 {
+
+        position: absolute;
+
+    }
+
+    #q2 img {
+
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 0;
+        left: 30%;
+
+    }
+
+    #q2 h3 {
+
+        font-weight: 600;
+
+    }
+
+    /* Response 2 */
+
+    #response2 {
+
+ text-align: center;
+ margin-top: 30px;
+
+    }
+
+        /* Susan's Second Resoonse */
+
+        #susan2 {
+
+            position: fixed;
+            margin: auto;
+            padding: auto;
+    
+    
+        }
+    
+        #susan2 p {
+    
+            width: 200px;
+            margin-bottom: 30px;
+            margin-left: 30px;
+            font-size: 9px;
+    
+        }
+    
+    
+        #susanContent2 {
+    
+            display: flex;
+            flex-direction: row;
+    
+        }
+    
+        #susanContent2 img {
+    
+            margin-left: 30px;
+    
+        }
+    
+        #susan2 h2,
+        h3 {
+    
+            margin-left: 30px;
+    
+        }
+
+        .twobuttons{
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+        }
+
+        #learnmore, #nextButton{
+            width: 200px;
+            text-align: center;
+            margin-top: 4%;
+            font-size: 17px;
+            padding: 1em 2em;
+            border: transparent;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            background-color: #1D4776;
+            font-weight: 600;
+            color: white;
+            border-radius: 30px;
+        }
+
+    .submitButton {
+        /* Default styles for the disabled state */
+        width: 250px;
+        font-weight: 600;
+        border-radius: 30px;
+        border: transparent;
+        text-align: center;
+        margin-top: 4%;
+        font-size: 17px;
+        padding: 1em 2em;
+        background-color: #CCCCCC;
+        color: #9D9D9D;
+    }
+
+    .submitButton.enabled {
+        /* Styles for the enabled state */
+        width: 250px;
+        text-align: center;
+        margin-top: 4%;
+        font-size: 17px;
+        padding: 1em 2em;
+        border: transparent;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        background-color: #1D4776;
+        font-weight: 600;
+        color: white;
+        border-radius: 30px;
+    }
+
+    .submitButton.enabled:hover {
+        cursor: pointer;
+    }
+
+    .q_button {
+        margin-top: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #q2 input {
+
+        margin-bottom: 20px;
+        margin-left: 25px;
+
+    }
+
+    #closeOverlay1 {
+
+        position: absolute;
+        float: right;
+        right: 0;
+        margin-right: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+
+    }
 
 
 }

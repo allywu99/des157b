@@ -1,36 +1,37 @@
 (function(){
 
-const q1page = document.getElementById("q1");
-const r1page = document.getElementById("response1");
-const submit1 = document.getElementById("submit1");
-const input = document.querySelectorAll("input");
+    "use strict";
+    console.log("js running");
 
-function buttonThing() {
+    const susan1 = document.getElementById("susan1");
+    const susan2 = document.getElementById("susan2");
+    const response2 = document.getElementById("response2");
+    const question3 = document.getElementById("q3");
+    const learnMore = document.getElementById("learnmore");
+    const nextButton = document.getElementById("nextButton");
 
-    const sd = document.forms["Form1"]["q1.0"].value;
-    const dis = document.forms["Form1"]["q1.1"].value;
-    const neu = document.forms["Form1"]["q1.2"].value;
-    const agr = document.forms["Form1"]["q1.3"].value;
-    const stragr = document.forms["Form1"]["q1.4"].value;
 
-}
+    document.getElementById("closeOverlay1").addEventListener("click", function(){
 
-if (input === true) {
+        susan1.className="hide";
 
-    submit1.style.backgroundColor="blue";
-    console.log("it's true");
 
-} else {
+    })
 
-    submit1.style.color="";
+    learnMore.addEventListener("click", function(){
 
-}
+        response2.className="hide";
+        susan2.className= "show";
 
-submit1.addEventListener("click", function(){
+    });
 
-    q1page.className="hide";
-    r1page.className="show";
+    nextButton.addEventListener("click", function(){
 
-});
+        response2.className="hide";
+        question3.className="show";
+
+
+    })
+    ;
 
 })();
