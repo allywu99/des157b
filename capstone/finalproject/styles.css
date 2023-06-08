@@ -1,0 +1,158 @@
+@media all and (max-width: 500px ) {
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+p{
+    line-height: 24px;
+}
+
+.sec1, .sec3{
+    background-color: #FFF9E5;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.sec1 h1{
+    color: #1D4776;
+    font-size: 3em;
+    font-weight: 600;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.dots{
+    margin-top: 7%;
+}
+.card{
+    color: white;
+    text-align: left;
+    background-color: #1D4776;
+    margin: 10%;
+    margin-top: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+.card h2{
+    font-weight: 600;
+}
+
+.sec2{
+    margin: 10%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.sec2 h1{
+    font-weight: 600;
+}
+
+.sec2 p{
+    margin-top: 3%;
+}
+
+.sec2 span{
+    color: #FFBF00;
+}
+.sec2 button {
+    width: 250px;
+    margin-top: 4%;
+    font-size: 17px;
+    padding: 1em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: #1D4776;
+    color: white;
+    border-radius: 30px;
+   }
+   
+/* .sec2 button:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+   } */
+   
+.sec2 button:active {
+    transform: translate(0em, 0.2em);
+   }
+
+.sec3{
+    padding: 10%;
+}
+
+.sec3 h1{
+    font-weight: 600;
+}
+
+.sec3 .left{
+    text-align: left;
+}
+
+.sec3 .right{
+    text-align: right;
+    margin-top: 10%;
+}
+
+#one {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.slider {
+    display: flex;
+    position: absolute;
+    left: 0;
+    height: 200px;
+}
+
+.slider div img {
+    height: 100%;
+    display: block;
+    margin-right: 20px;
+}
+
+.a, .b {
+   display: flex;
+   height: 100%;
+}
+
+@keyframes moveSlider {
+    from { left: 0; }
+    to { left: var(--sliderwidth) }
+}
+.animate {
+    animation-name: moveSlider;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+footer{
+    background-color: #1D4776;
+    color: white;
+    padding: 20px;
+}
+
+footer .links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+footer a{
+    width: 250px;
+    margin-top: 4%;
+    font-size: 16px;
+    padding: 1em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: white;
+    color: #1D4776;
+    border-radius: 30px;
+}
+}

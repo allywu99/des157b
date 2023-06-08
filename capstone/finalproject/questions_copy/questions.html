@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JS -->
+    <script src="questions.js" defer></script>
+    <!-- CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!--  Normalized CSS  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+        <!--  Google Fonts  -->
+        <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Oswald:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Seal Questionaire</title>
+</head>
+<body>
+
+  <header>
+
+<h2>Instructions</h2>
+<ol>
+  <li>Look at each symbol</li>
+  <li>Tell us about your experience in Davis</li>
+  <li>Compare experiences with other UC Davis students and view the artists' intention as well</li>
+</ol>
+
+  </header>
+
+    <form id="q1" class="show">
+      <img src="../images/question1.jpg" alt="Photo of the seal" class="q_img show">
+      <h3>Q1. I feel accepted and represented within the Davis community</h3>
+
+      <!-- Radio buttons -->
+      <div class="radio">
+        <input type="radio" name="options" value="option1">Strongly Disagree
+      </div>
+
+      <div class="radio">
+          <input type="radio" name="options" value="option2">Disagree
+      </div>
+
+      <div class="radio">
+          <input type="radio" name="options" value="option3">Neutral
+      </div>
+
+      <div class="radio">
+          <input type="radio" name="options" value="option4">Agree
+      </div>
+
+      <div class="radio">
+          <input type="radio" name="options" value="option5">Strongly Agree
+      </div>
+
+      <!-- Submit button -->
+      <div class="q_button">
+          <button type="submit" id="submitButton" disabled class="submitButton">Submit</button>
+      </div>  
+      
+      <!-- Home button -->
+      <div class="home">
+        <a href="../index.html">Back to Home</a> 
+      </div>
+           
+    </form>
+
+    <form id="q1_ans" class="hide">
+      <img src="../images/question2.jpg" alt="Photo of the seal" class="q_img show">
+      <h3>Q1. I feel accepted and represented within the Davis community</h3>
+
+      <div class="results">
+        <div class="group">
+          <progress class="q1_ans" value="5" max="100">5</progress>
+          <p><b>5%</b> Strongly Disagree</p>
+        </div>
+        <div class="group">
+          <progress class="q1_ans" value="15" max="100">15</progress>
+          <p><b>15% </b>Disagree</p>
+        </div>
+        <div class="group">
+         <progress class="q1_ans" value="50" max="100">50</progress>
+         <p><b>50%</b> are Neutral</p>
+        </div>
+        <div class="group">
+          <progress class="q1_ans" value="20" max="100">20</progress>
+          <p><b>20%</b> Agree</p>
+        </div>
+        <div class="group">
+          <progress class="q1_ans" value="10" max="100">10</progress>
+          <p><b>10%</b> Strongly Agree</p>
+        </div>
+      </div>
+
+      <!-- Learn More and Next Button -->
+      <div class="twobuttons">
+        <button id="toggleOverlay">Learn More</button>
+        <button type="submit" id="nextButton">Next</button>
+      </div>  
+
+      <div class="overlay">
+        <div class="overlay-content">
+          <img src="../images/susanopen.png" alt = "Susan's testimonial">
+          <span class="closebtn" onclick="closeOverlay()">&times;</span>
+        </div>
+      </div>
+
+      <!-- <div id="overlay" class="overlay">
+        <img src="../images/susanopen.png" alt = "Susan's testimonial">
+      </div>
+       -->
+      <div class="home">
+        <a href="../index.html">Back to Home</a> 
+      </div>
+           
+    </form>
+
+    <!-- Question 2 -->
+    <form id="q2" class="hide">
+      <img src="../images/question2.jpg" alt="Photo of the seal Question 2" class="q_img show">
+      <h3>Q2. Among these plants and animals, choose which you think are native to Davis, CA.</h3>
+      <div class="checkbox">
+        <input type="checkbox" name="wildlife" value="ducks"> Ducks<br>
+      <input type="checkbox" name="wildlife" value="grass"> Grass<br>
+      <input type="checkbox" name="wildlife" value="chickens"> Chickens<br>
+      <input type="checkbox" name="wildlife" value="lilypads"> Lily pads<br>
+      <input type="checkbox" name="wildlife" value="reeds"> Reeds<br>
+      </div>
+
+        <!-- Submit button -->
+      <div class="q_button">
+          <button type="submit" id="submitButton2" disabled class="submitButton2">Submit</button>
+      </div>  
+          
+    <!-- Home button -->
+      <div class="home">
+        <a href="../index.html">Back to Home</a> 
+      </div>
+           
+    </form>
+
+    <section id="q2_ans" class="hide">
+      <img src="images/q2image.png" width="160" height="183">
+      <img src="images/response2.png" width="375" height="320">
+      
+        <div class="twobuttons">
+          <button type="submit" id="learnmore">Learn More</button>
+          <button type="submit" id="nextButton">Next</button>
+        </div>  
+      
+      
+        </section>
+
+    <progress id="quizProg" value="33.33" max="100"> 10% </progress>
+
+</body>
+</html>
