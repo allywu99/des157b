@@ -1,0 +1,284 @@
+.show {
+
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.hide {
+
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+
+@media all and (max-width: 500px) {
+
+    body {
+        overflow-x: hidden;
+        background-color: rgb(255, 255, 255);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      button:active {
+        transform: translate(0em, 0.2em);
+       }
+
+    header {
+
+        background-color: #1D4776;
+        color: white;
+        padding: 50px;
+        height: 120px;
+
+    }
+
+    header h2 {
+
+        position: absolute;
+        width: 121px;
+        height: 30px;
+        left: 43px;
+        top: 15px;
+        
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+
+    ol li {
+
+        padding: 5px;
+
+    }
+
+    ol {
+
+        position: absolute;
+        width: 289px;
+        height: 121px;
+        left: 12px;
+        top: 57px;
+        
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        
+
+    }
+
+    p {
+        line-height: 24px;
+    }
+    .radio {
+        margin: 0.5rem; 
+    }
+
+    .radio input[type="radio"]:checked{
+       background-color: #1D4776; 
+    }
+
+    .submitButton {
+        /* Default styles for the disabled state */
+        width: 250px;
+        font-weight: 600;
+        border-radius: 30px;
+        border: transparent;
+        text-align: center;
+        margin-top: 4%;
+        font-size: 17px;
+        padding: 1em 2em;
+        background-color: #CCCCCC;
+        color: #9D9D9D;
+      }
+      
+      .submitButton.enabled {
+        /* Styles for the enabled state */
+        width: 250px;
+        text-align: center;
+        margin-top: 4%;
+        font-size: 17px;
+        padding: 1em 2em;
+        border: transparent;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        background-color: #1D4776;
+        font-weight: 600;
+        color: white;
+        border-radius: 30px;
+      }
+
+      .submitButton.enabled:hover {
+        cursor: pointer;
+      }
+    .q_button{
+        margin-top: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #q1, #q1_ans{
+        position: absolute;
+    }
+
+    #q1, #q1_ans, .checkbox, .radio, h3{
+        margin-left: 7%;
+        margin-right: 5%;
+    }
+
+    #q1, #q1_ans h3{
+        font-weight: 600;
+    }
+
+    .home{
+        margin-top: 3%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .home a{
+        color:#CCCCCC;
+    }
+
+    .q_img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7%;
+        width: 50%;
+    }
+
+    .twobuttons{
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    #toggleOverlay, #nextButton{
+        width: 200px;
+        text-align: center;
+        margin-top: 4%;
+        font-size: 17px;
+        padding: 1em 2em;
+        border: transparent;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        background-color: #1D4776;
+        font-weight: 600;
+        color: white;
+        border-radius: 30px;
+    }
+
+    #toggleOverlay, #nextButton:hover{
+        cursor: pointer;
+    }
+    #quizProg {
+        position: fixed;
+        bottom: 0;
+        background-color: #D9D9D9;
+        color: #1D4776;
+        width: 100%;
+        height: 20px;
+    }
+
+    progress::-webkit-progress-bar {
+        background-color: #D9D9D9;
+     }
+    #quizProg::-webkit-progress-value {
+        background-color: #1D4776;
+     }
+     .q1_ans::-webkit-progress-value {
+        background-color: #FFBF00;
+     }
+
+     /* STYLING THE DATA BARS */
+     .q1_ans{
+        margin-left: 7%;
+        background-color: #D9D9D9;
+        width: 40%;
+        height: 20px;
+     }
+
+     .group {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+     }
+    
+     .group p{
+        text-align: left;
+     }
+
+    .results p{
+        font-size: 1.2em;
+    }
+
+    /* STYLE THE OVERLAY */
+    /* .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        bottom: -100%;
+        left: 0;
+        right: 0;
+        animation: slide-up 0.3s ease-in-out forwards;
+      } */
+      
+      .overlay {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        bottom: -100%;
+        left: 0;
+        right: 0;
+        animation: slide-up 0.3s ease-in-out forwards;
+      }
+      
+      
+      .overlay.open {
+        animation: none;
+      }
+      
+      
+
+      @keyframes slide-up {
+        0% {
+          bottom: -100%;
+        }
+        100% {
+          bottom: 0;
+        }
+      }      
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .closebtn {
+        position: absolute;
+        color: #1D4776;
+        top: 27px;
+        right: 75px;
+        font-size: 40px;
+        cursor: pointer;
+      }
+
+}

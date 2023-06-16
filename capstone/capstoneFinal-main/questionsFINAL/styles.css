@@ -1,0 +1,543 @@
+.show {
+
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.hide {
+
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+
+}
+
+
+
+@media all and (max-width: 500px) {
+
+    #all {
+
+        position:absolute;
+        background-color: black;
+        height:100%;
+        width: 100%;
+        z-index: 5;
+        opacity: 50%;
+
+    }
+
+    body {
+        overflow-x: hidden;
+        background-color: rgb(255, 255, 255);
+        font-family: 'Poppins', sans-serif;
+
+        animation: fadeInAnimation ease 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    button:active {
+        transform: translate(0em, 0.2em);
+    }
+
+    /* STYLING HEADER */
+    header {
+        background-color: #1D4776;
+        color: white;
+        padding: 40px;
+        height: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #openRules {
+        border-radius: 90px;
+        padding: 10px;
+        background-color: #1D4776;
+        color: white;
+    }
+
+    /* STYLING THE INSTRUCTIONS POPUP */
+    #instructions {
+        position: absolute;
+        margin-left: 9%;
+        text-align: center;
+        top:30%;
+        padding: 10px;
+        height: 350px;
+        width:400px;
+        background-color: #1D4776;
+        border-radius: 15px;
+        z-index: 10;
+        color: white;
+    }
+            
+
+    #instructions ol li {
+        padding: 10px;
+    }
+
+    #instructions ol {
+        text-align: left;
+
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    #closeRules {
+
+        padding: 5px 45px 5px 45px;
+        border-radius: 30px;
+        border: none;
+        width: 200px;
+        text-align: center;
+        font-size: 17px;
+        padding: 1em 2em;
+        border: transparent;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        background-color: #ffffff;
+        color: #1D4776;
+        font-weight: 600;
+
+    }
+
+    p {
+        line-height: 24px;
+    }
+
+    label {
+
+        display: block;
+        font-size: 14px;
+
+    }
+
+    form {
+
+        text-align: left;
+        padding: 40px;
+    }
+
+    form p {
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+
+    }
+
+    input {
+        width: auto;
+        display: inline;
+    }
+    /* STYLING HOME BACK LINK *//* STYLING HOME BACK LINK *//* STYLING HOME BACK LINK */
+    .home{
+        margin-top: 7%;
+        text-align: center;
+    }
+
+    .home a{
+        color:#CCCCCC;
+    }
+
+
+    .submit1 {
+
+        font-size: 14px;
+        position: absolute;
+        width: 174px;
+        height: 37px;
+        left: 100px;
+        top: 560px;
+        border-radius: 40px;
+        border: none;
+        color: #CCCCCC;
+
+    }
+
+    /* STYLING RADIO BUTTON*/
+    .radio input[type='radio']:checked:after {
+        background-color: #1D4776;
+    }
+
+    /* STYLING THE PROGRESS BAR */ /* STYLING THE PROGRESS BAR */ /* STYLING THE PROGRESS BAR */
+    
+      
+    #progtext{
+        position: fixed;
+        bottom: 3%;
+        left: 40%; 
+        text-align: center;
+        color: #9D9D9D;
+        margin-top: 5%;
+    }
+    #quizProg {
+        position: fixed;
+        bottom: 0;
+        background-color: #D9D9D9;
+        color: #1D4776;
+        width: 100%;
+        height: 20px;
+    }
+
+    progress::-webkit-progress-bar {
+        background-color: #D9D9D9;
+     }
+    #quizProg::-webkit-progress-value {
+        background-color: #1D4776;
+     }
+
+     .q1_ans::-webkit-progress-value {
+        background-color: #FFBF00;
+     }
+
+    /* STYLING QUESTION 1/3 */ 
+    #q1 img, #q1_ans img, #q2 img, #q2_ans img, #q3 img, #q3_ans img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+
+    #q1 h3, #q1_ans h3{
+        font-weight: 600;
+        margin-left: 7%;
+    }
+    .radio {
+        margin-left: 7%;
+    }
+
+    #q1, #q2, #q3{
+        position: absolute;
+    }
+
+    #q2 h3{
+        margin-left: 7%;
+    }
+
+
+    /* STYLING QUESTION 1 ANSWER */ 
+     .bar{
+        width: 40%;
+        height: 20px;
+        background-color: #D9D9D9;
+        overflow: hidden;
+    }
+    .progress1{
+        height: 100%;
+        background-color: #FFBF00;
+        width: 0;
+        animation: progressAnimation1 1.5s ease-in-out;
+        animation-fill-mode: both;
+      }
+      @keyframes progressAnimation1 {
+        0% { width: 0%; }
+        100% { width: 5%; }
+      }
+      .progress2{
+        height: 100%;
+        background-color: #FFBF00;
+        width: 0;
+        animation: progressAnimation2 1.5s ease-in-out;
+        animation-fill-mode: both;
+      }
+      
+      @keyframes progressAnimation2 {
+        0% { width: 0%; }
+        100% { width: 15%; }
+      }
+      .progress3{
+        height: 100%;
+        background-color: #FFBF00;
+        width: 0;
+        animation: progressAnimation3 1.5s ease-in-out;
+        animation-fill-mode: both;
+      }
+      
+      @keyframes progressAnimation3 {
+        0% { width: 0%; }
+        100% { width: 50%; }
+      }
+      .progress4{
+        height: 100%;
+        background-color: #FFBF00;
+        width: 0;
+        animation: progressAnimation4 1.5s ease-in-out;
+        animation-fill-mode: both;
+      }
+      
+      @keyframes progressAnimation4 {
+        0% { width: 0%; }
+        100% { width: 20%; }
+      }
+      .progress5{
+        height: 100%;
+        background-color: #FFBF00;
+        width: 0;
+        animation: progressAnimation5 1.5s ease-in-out;
+        animation-fill-mode: both;
+      }
+      
+      @keyframes progressAnimation5 {
+        0% { width: 0%; }
+        100% { width: 10%; }
+      }
+      .progress6{
+        height: 100%;
+        background-color: #FFBF00;
+        width: 0;
+        animation: progressAnimation6 1.5s ease-in-out;
+        animation-fill-mode: both;
+      }
+      
+      @keyframes progressAnimation6 {
+        0% { width: 0%; }
+        100% { width: 8%; }
+      }
+      .progress7{
+        height: 100%;
+        background-color: #FFBF00;
+        width: 0;
+        animation: progressAnimation7 1.5s ease-in-out;
+        animation-fill-mode: both;
+      }
+      
+      @keyframes progressAnimation7 {
+        0% { width: 0%; }
+        100% { width: 12%; }
+      }
+      .progress8{
+        height: 100%;
+        background-color: #FFBF00;
+        width: 0;
+        animation: progressAnimation8 1.5s ease-in-out;
+        animation-fill-mode: both;
+      }
+      
+      @keyframes progressAnimation8 {
+        0% { width: 0%; }
+        100% { width: 20%; }
+      }
+      .progress9{
+        height: 100%;
+        background-color: #FFBF00;
+        width: 0;
+        animation: progressAnimation9 1.5s ease-in-out;
+        animation-fill-mode: both;
+      }
+      
+      @keyframes progressAnimation9 {
+        0% { width: 0%; }
+        100% { width: 30%; }
+      }
+      .progress10{
+        height: 100%;
+        background-color: #FFBF00;
+        width: 0;
+        animation: progressAnimation10 1.5s ease-in-out;
+        animation-fill-mode: both;
+      }
+      
+      @keyframes progressAnimation10 {
+        0% { width: 0%; }
+        100% { width: 30%; }
+      }
+      .results{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 5%;
+      }
+
+     .group {
+        display: flex;
+        align-items: center;
+        gap: 20px; 
+     }
+    
+     .group p{
+        text-align: left;
+        margin: 10px;
+        animation: fadeInAnimation 1.5s ease-in-out;
+     }
+
+    .results p{
+        font-weight: 300;
+        font-size: 1.2em;
+    }
+
+    /* STYLING QUESTION 2*/ 
+    #q2 .checkboxes{
+        margin-left: 7%;
+        font-size: 1.2rem;
+    }
+
+    /* STYLING SUBMIT BUTTON */ 
+    .submitButton {
+        /* Default styles for the disabled state */
+        width: 250px;
+        font-weight: 600;
+        border-radius: 30px;
+        border: transparent;
+        text-align: center;
+        margin-top: 4%;
+        font-size: 17px;
+        padding: 1em 2em;
+        background-color: #CCCCCC;
+        color: #9D9D9D;
+      }
+
+      #submitButton2, #submitButton3 {
+        /* Styles for the enabled state */
+        width: 250px;
+        text-align: center;
+        margin-top: 4%;
+        font-size: 17px;
+        padding: 1em 2em;
+        border: transparent;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        background-color: #1D4776;
+        font-weight: 600;
+        color: white;
+        border-radius: 30px;
+      }
+      
+      .submitButton.enabled {
+        /* Styles for the enabled state */
+        width: 250px;
+        text-align: center;
+        margin-top: 4%;
+        font-size: 17px;
+        padding: 1em 2em;
+        border: transparent;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        background-color: #1D4776;
+        font-weight: 600;
+        color: white;
+        border-radius: 30px;
+      }
+
+      .submitButton.enabled:hover {
+        cursor: pointer;
+      }
+    .q_button{
+        margin-top: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* STYLE SUSAN OVERLAY */
+    #learnMore, #learnMore2, #learnMore3 {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        bottom: -100%;
+        left: 0;
+        right: 0;
+        animation: slide-up 0.3s ease-in-out forwards;
+      }
+      
+      
+      #learnMore.open, #learnMore2.open, #learnMore3.open  {
+        animation: none;
+      }
+      
+      
+
+      @keyframes slide-up {
+        0% {
+          bottom: -100%;
+        }
+        100% {
+          bottom: 0;
+        }
+      }      
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .closebtn {
+        position: absolute;
+        color: #1D4776;
+        top: 27px;
+        right: 40px;
+        font-size: 40px;
+        cursor: pointer;
+      }
+
+        .twobuttons{
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+        }
+
+        #toggleOverlay, #toggleOverlay2, #toggleOverlay3, #nextButton, #nextButton2, #nextButton3{
+            width: 200px;
+            text-align: center;
+            margin-top: 4%;
+            font-size: 17px;
+            padding: 1em 2em;
+            border: transparent;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            background-color: #1D4776;
+            font-weight: 600;
+            color: white;
+            border-radius: 30px;
+        }
+
+        #final{
+            text-align: center;
+            margin-top: 50%;
+        }
+
+        #final h1{
+            font-size: 3em;
+        }
+
+        #final p{
+            font-size: 1.2em;
+        }
+
+        #final a{
+            text-decoration: none;
+            color: white;
+        }
+
+        #final button{
+        /* Styles for the enabled state */
+        width: 250px;
+        text-align: center;
+        margin-top: 4%;
+        font-size: 17px;
+        padding: 1em 2em;
+        border: transparent;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        background-color: #1D4776;
+        font-weight: 600;
+        color: white;
+        border-radius: 30px;
+        }
+}
